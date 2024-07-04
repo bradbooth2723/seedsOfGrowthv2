@@ -1,0 +1,35 @@
+import { Link, useMatch, useResolvedPath } from 'react-router-dom'
+import './styles.css';
+
+// TODO: Make this more generic to handle variable input to tab list
+// TODO: Ability for dropdown tab as well
+const Navbar = ({ title, tabs, ...props}) => {
+    const t = title ? (<Link to={ title.to } className='site-title'>{title.children}</Link>) : (<></>);
+    return <nav className="nav">
+        {t}
+        <ul>
+            {/* <CustomLink to="/pricing">Pricing</CustomLink>
+            <CustomLink to="/about">About</CustomLink> */}
+            {tabs.map((item) => {
+                //TODO: I think dropdown conditional would go here
+                return (
+                    <CustomLink key={item.Id} to={item.to}>{item.children}</CustomLink>
+                )
+            })}
+        </ul>
+    </nav>
+}
+
+const CustomLink = ({ to, children, ...props }) => {
+    const resolvedPath = useResolvedPath(to);
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+    return (
+        <li className={isActive ? "active" : ""}>
+            <Link to={to} {...props}>
+                {children}
+            </Link>
+        </li>
+    )
+}
+
+export default Navbar

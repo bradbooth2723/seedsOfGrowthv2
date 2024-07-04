@@ -1,0 +1,3 @@
+.nav-bar {
+    grid-column: m1-end / m2-start;
+}
