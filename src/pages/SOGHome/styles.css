@@ -1,52 +1,45 @@
 .hero {
-    grid-column: c1-end / g8-start;
+    grid-column: m1-end / g3-start;
 }
 
 img {
     max-width: 100%;
     object-fit: contain;
+    /* TODO: I think there should be a floating schedule button when screen is so small */
 }
 
 .button-with-text {
-    grid-column: g8-start / m2-start;
+    grid-column: g3-start / m2-start;
     background-color: lightgreen;
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
 }
 
-/*
-@media screen and (max-width: 37.5rem) {
-    .hero {
-        grid-column: 2 / 6;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
-
-    .schedule-button {
-        grid-column: 6 / 9;
-    }
+.header {
+    grid-column: m1-end / g4-start;
 }
 
 @media screen and (min-width: 37.5rem) {
     .hero {
-        grid-column: 1 / 9;
+        grid-column-end: g6-start;
     }
 
-    img {
-        max-width: 100%;
-        height: auto;
-        object-fit: contain;
+    .button-with-text {
+        grid-column-start: g6-start;
+    }
+}
+
+/* screen >= 905 */
+@media screen and (min-width: 56.5625rem) {
+    .hero {
+        grid-column-end: g8-start;
     }
 
-    .schedule-button {
-        grid-column: 9 / 13;
+    .button-with-text {
+        grid-column-start: g8-start;
     }
-} */
+}
 
 
 

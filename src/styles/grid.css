@@ -1,3 +1,5 @@
+/* https://morganfeeney.com/guides/grid-systems/how-to-create-your-own-css-grid-grid-system */
+
 :root {
     --fluid-area: 2rem;
     --margin: 1px;
@@ -62,7 +64,7 @@
     }
 } 
 
-
+/* https://m2.material.io/design/layout/responsive-layout-grid.html#breakpoints */
 /* | Screen Size    | Margin | Body   | Columns |
     Extra-Small (Phone)
    | 0 - 599 px     | 16 px  | Scl    | 4       |

@@ -13,6 +13,7 @@ const Navbar = ({ title, tabs, ...props}) => {
             {tabs.map((item) => {
                 //TODO: I think dropdown conditional would go here
                 return (
+                    // TODO: Figure out why there is an warning for list items needing a key
                     <CustomLink key={item.Id} to={item.to}>{item.children}</CustomLink>
                 )
             })}
@@ -20,11 +21,11 @@ const Navbar = ({ title, tabs, ...props}) => {
     </nav>
 }
 
-const CustomLink = ({ to, children, ...props }) => {
+const CustomLink = ({ to, key, children, ...props }) => {
     const resolvedPath = useResolvedPath(to);
     const isActive = useMatch({ path: resolvedPath.pathname, end: true });
     return (
-        <li className={isActive ? "active" : ""}>
+        <li className={isActive ? "active" : ""} key={key}>
             <Link to={to} {...props}>
                 {children}
             </Link>

@@ -1,0 +1,39 @@
+.treatment-card {
+    background-color: lightgreen;
+    padding: 1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 37.5rem) {
+    .treatment-card {
+        grid-column: m1-end / m2-start;
+    }
+}
+
+@media screen and (min-width: 37.5rem) {
+    .treatment-card:nth-child(2n+1) {
+        grid-column: m1-end / c4-end;
+    }
+
+    .treatment-card:nth-child(2n+2) {
+        grid-column: g4-end / m2-start;
+    }
+}
+
+/* screen >= 905 */
+@media screen and (min-width: 56.5625rem) {
+    .treatment-card:nth-child(3n + 1) {
+        grid-column: m1-end / c4-end;
+    }
+    
+    .treatment-card:nth-child(3n + 2) {
+        grid-column: g4-end / c8-end;
+    }
+    
+    .treatment-card:nth-child(3n + 3) {
+        grid-column: g8-end / m2-start;
+    }
+}
