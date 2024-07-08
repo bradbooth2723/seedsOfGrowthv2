@@ -1,20 +1,25 @@
 import HomeBanner from 'assets/homeBanner.jpg';
+import { resolvePath } from 'react-router-dom';
 import './styles.css';
 import SOGTreatmentCard from 'components/SOGTreatmentCard/SOGTreatmentCard.jsx';
+import SOGTherapistCardSlideContainer from 'components/SOGTherapistCardSlide/SOGTherapistCardSlideContainer.jsx';
 
 const SOGHome = () => {
     return (
         <>
             <img src={HomeBanner} className='hero' />
-            {/* <h1 className='button-with-text'>Grow With Care</h1> */}
             <SOGHeroCard />
             <h1 className='header'>Treatment Focus</h1>
             <br /> <br />
             <SOGTreatmentCard />
+            <h1 className='header'>Meet Our Therapists</h1>
+            {/* <TherapistCard className='full-length' /> */}
+            <SOGTherapistCardSlideContainer />
         </>
     )
 }
 
+// TODO: This should be in its own component
 const SOGHeroCard = () => {
     return (
         <div className='button-with-text'>
@@ -23,6 +28,13 @@ const SOGHeroCard = () => {
             {/* TODO: Add Button */}
         </div>
     )
+}
+
+const TherapistCard = () => {
+    console.log(resolvePath('src/assets/murat-esibatir.jpg'));
+    const imgPath = 'src/assets/murat-esibatir.jpg';
+
+    return <img src={imgPath} alt='' className='full-length' />
 }
 
 export default SOGHome;

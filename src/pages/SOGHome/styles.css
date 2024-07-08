@@ -41,6 +41,10 @@ img {
     }
 }
 
+.full-length {
+    grid-column: m1-end / m2-start;
+}
+
 
 
 /* | Screen Size    | Margin | Body   | Columns |

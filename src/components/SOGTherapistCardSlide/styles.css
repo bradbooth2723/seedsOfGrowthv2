@@ -1,0 +1,18 @@
+.therapist-card-slide-container {
+    grid-column: m1-end / m2-start;
+    border-style: solid;
+}
+
+.therapist-card-slide-interior {
+    display: flex;
+}
+
+.next {
+    width: 14%;
+    
+}
+
+.prev {
+    width: 14%;
+    height: max-content;
+}
