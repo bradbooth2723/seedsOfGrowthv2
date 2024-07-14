@@ -30,11 +30,4 @@ const SOGHeroCard = () => {
     )
 }
 
-const TherapistCard = () => {
-    console.log(resolvePath('src/assets/murat-esibatir.jpg'));
-    const imgPath = 'src/assets/murat-esibatir.jpg';
-
-    return <img src={imgPath} alt='' className='full-length' />
-}
-
 export default SOGHome;

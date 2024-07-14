@@ -1,8 +1,5 @@
 .hero {
     grid-column: m1-end / g3-start;
-}
-
-img {
     max-width: 100%;
     object-fit: contain;
     /* TODO: I think there should be a floating schedule button when screen is so small */
