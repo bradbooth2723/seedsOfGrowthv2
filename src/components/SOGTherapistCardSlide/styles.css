@@ -1,0 +1,30 @@
+.therapist-card-slide-container {
+    grid-column: m1-end / m2-start;
+    border-style: solid;
+    height: 25rem;
+    display: flex;
+}
+
+.therapist-card-slide-interior {
+    height: 100%;
+    display: flex;
+}
+
+.cards {
+    margin-right: 1rem;
+    width: calc(calc(100% - 2rem) / 3);
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.last {
+    margin-right: 0;
+}
+
+.next {
+    width: 2rem;
+}
+
+.prev {
+    width: 2rem;
+}

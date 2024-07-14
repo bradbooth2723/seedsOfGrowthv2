@@ -1,6 +1,8 @@
 import './styles.css';
 import treatments from 'data/treatmentFocus.json';
 
+// TODO: Should be a carasoul when on lowest screen setting
+// TODO: Make sure body starts at same place for all cards
 const SOGTreatmentCard = () => {
     return (<>
         {treatments.map((treatment, index) => {

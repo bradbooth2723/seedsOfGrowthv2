@@ -1,0 +1,35 @@
+[
+    {
+        "name": "Anjali Aysu",
+        "titles": [
+            "LMFT", "LPCC", "Owner"
+        ],
+        "proNoun": "F",
+        "focus": [
+            "LTT", "DBT", "CBT", "ACT", "CTT", "NT"
+        ],
+        "headShot": "murat-esibatir.jpg"
+    },
+    {
+        "name": "Herman Ol'ga",
+        "titles": [
+            "LMFT"
+        ],
+        "proNoun": "M",
+        "focus": [
+            "Life Transitions Therapy", "CBT"
+        ],
+        "headShot": "hermanO.jpg"
+    },
+    {
+        "name": "Emmy Semra",
+        "titles": [
+            "AMFT"
+        ],
+        "proNoun": "T",
+        "focus": [
+            "Complex Trauma Therapy", "DBT", "Narrative Therapy", "Play Therapy"
+        ],
+        "headShot": "emmyS.jpg"
+    }
+]
