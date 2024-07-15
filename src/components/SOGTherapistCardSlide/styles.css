@@ -1,7 +1,6 @@
 .therapist-card-slide-container {
     grid-column: m1-end / m2-start;
-    border-style: solid;
-    height: 25rem;
+    height: 22rem;
     display: flex;
 }
 
@@ -17,7 +16,7 @@
     flex-grow: 0;
 }
 
-.last {
+.last{
     margin-right: 0;
 }
 

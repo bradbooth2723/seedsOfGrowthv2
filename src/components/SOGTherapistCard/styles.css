@@ -3,7 +3,7 @@
     width: 80%;
     height: auto;
     aspect-ratio: 1;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 
 .summary-title {
@@ -19,6 +19,5 @@
 .flex-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* height: 100%; */
+    align-items: center;
 }

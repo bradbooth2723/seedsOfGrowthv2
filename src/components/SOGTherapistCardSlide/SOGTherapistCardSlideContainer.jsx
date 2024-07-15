@@ -1,7 +1,6 @@
 import './styles.css';
 import SOGTherapistCard from 'components/SOGTherapistCard/SOGTherapistCard';
 import therapists from 'data/therapistDetails.json';
-import { useResolvedPath } from 'react-router-dom';
 
 
 const SOGTherapistCardSlideContainer = () => {

@@ -8,8 +8,6 @@ const Navbar = ({ title, tabs, ...props}) => {
     return <nav className="nav">
         {t}
         <ul>
-            {/* <CustomLink to="/pricing">Pricing</CustomLink>
-            <CustomLink to="/about">About</CustomLink> */}
             {tabs.map((item) => {
                 //TODO: I think dropdown conditional would go here
                 return (

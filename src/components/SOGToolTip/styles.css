@@ -1,0 +1,93 @@
+.tool-tip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+/* TODO: Make width adust to size of content */
+.tool-tip .tool-tip-text {
+    visibility: hidden;
+    width: 7.5rem;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: .25rem;
+    border-radius: .5rem;
+    position: absolute;
+    z-index: 1;
+}
+
+.tool-tip:hover .tool-tip-text {
+    visibility: visible;
+}
+
+/* TODO: Better way to hide tooltip when hovering over it */
+.tool-tip .tool-tip-text:hover {
+    visibility: hidden;
+}
+
+.tool-tip .right .tool-tip-text {
+    top: -.25rem;
+    left: 105%;
+}
+
+.tool-tip .left .tool-tip-text {
+    top: -.25rem;
+    right: 105%;
+}
+
+.tool-tip .top .tool-tip-text {
+    bottom: 100%;
+    left: 50%;
+    margin-left: -3.75rem;
+}
+
+.tool-tip .bottom .tool-tip-text {
+    top: 100%;
+    left: 50%;
+    margin-left: -3.75rem;
+}
+
+.tool-tip .top .tool-tip-text::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -.25rem;
+    border-width: .25rem;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tool-tip .bottom .tool-tip-text::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -.25rem;
+    border-width: .25rem;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.tool-tip .right .tool-tip-text::after {
+    content: " ";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    margin-left: -.25rem;
+    border-width: .25rem;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+
+.tool-tip .left .tool-tip-text::after {
+    content: " ";
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    margin-left: -.25rem;
+    border-width: .25rem;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}
