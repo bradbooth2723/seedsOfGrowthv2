@@ -31,5 +31,38 @@
             "CTT", "DBT", "NT"
         ],
         "headShot": "emmyS.jpg"
+    },
+    {
+        "name": "Emmy Semra",
+        "titles": [
+            "AMFT"
+        ],
+        "proNoun": "T",
+        "focus": [
+            "CTT", "DBT", "NT"
+        ],
+        "headShot": "emmyS.jpg"
+    },
+    {
+        "name": "Herman Ol'ga",
+        "titles": [
+            "LMFT"
+        ],
+        "proNoun": "M",
+        "focus": [
+            "LTT", "CBT"
+        ],
+        "headShot": "hermanO.jpg"
+    },
+    {
+        "name": "Anjali Aysu",
+        "titles": [
+            "LMFT", "LPCC", "Owner"
+        ],
+        "proNoun": "F",
+        "focus": [
+            "LTT", "DBT", "CBT", "ACT", "CTT", "NT"
+        ],
+        "headShot": "murat-esibatir.jpg"
     }
 ]

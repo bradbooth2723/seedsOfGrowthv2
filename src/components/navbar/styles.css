@@ -27,12 +27,7 @@
 }
 
 .nav li.active {
-    /* background-color: #555; */
     text-decoration: underline;
-}
-
-.nav li:hover {
-    /* background-color: #777; */
 }
 
 .site-title {
