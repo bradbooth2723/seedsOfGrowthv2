@@ -1,5 +1,4 @@
 import HomeBanner from 'assets/homeBanner.jpg';
-import { resolvePath } from 'react-router-dom';
 import './styles.css';
 import SOGTreatmentCard from 'components/SOGTreatmentCard/SOGTreatmentCard.jsx';
 import SOGTherapistCardSlideContainer from 'components/SOGTherapistCardSlide/SOGTherapistCardSlideContainer.jsx';
@@ -13,7 +12,6 @@ const SOGHome = () => {
             <br /> <br />
             <SOGTreatmentCard />
             <h1 className='header'>Meet Our Therapists</h1>
-            {/* <TherapistCard className='full-length' /> */}
             <SOGTherapistCardSlideContainer />
         </>
     )

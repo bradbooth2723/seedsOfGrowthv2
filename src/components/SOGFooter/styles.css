@@ -1,0 +1,19 @@
+.grid-c {
+    grid-column: m1-end / m2-start;
+    background-color: forestgreen;
+    margin-top: 2rem;
+}
+
+.sog-footer {
+    display: flex;
+    padding: 1rem;
+}
+
+.address {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.copy-right {
+    text-align: center;
+}

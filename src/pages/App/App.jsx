@@ -1,5 +1,6 @@
-import SOGNavBar from 'pages/SOGNavBar/SOGNavBar';
+import SOGNavBar from 'components/SOGNavBar/SOGNavBar';
 import SOGHome from 'pages/SOGHome/SOGHome';
+import SOGFooter from 'components/SOGFooter/SOGFooter';
 import { Route, Routes } from "react-router-dom";
 import './styles.css';
 import 'styles/grid.css';
@@ -13,6 +14,7 @@ const App = () => {
         <Route path='/pricing' element={<Pricing />} />
         <Route path='/about' element={<About />} />
       </Routes>
+      <SOGFooter />
     </div>
   )
 }

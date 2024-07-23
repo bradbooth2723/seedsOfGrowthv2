@@ -22,8 +22,6 @@ const SOGTherapistCardSlideContainer = () => {
         dots[i].className = dots[i].className.replace(' active', '');
     }
 
-    console.log(dots);
-
     const therapistGroups = makeCarouselGroups(therapists, groupSize);
 
     if ((dots.length > 0) && therapistGroups.length > 1) {
@@ -73,7 +71,7 @@ const SOGTherapistCardSlideContainer = () => {
             </div>
             {showDots ? (
                 <div className='bubbles'>
-                    {therapistGroups.map((_, index) => (<span class='dot' onClick={() => handleDot(index)}></span>))}
+                    {therapistGroups.map((_, index) => (<span key={index} class='dot' onClick={() => handleDot(index)}></span>))}
                 </div>
             ) : null}
             
