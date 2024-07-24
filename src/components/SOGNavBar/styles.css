@@ -1,4 +1,6 @@
 .img-with-text {
     text-align: center;
     font-size: 1rem;
+    background-color: forestgreen;
+    text-decoration: none;
 }
