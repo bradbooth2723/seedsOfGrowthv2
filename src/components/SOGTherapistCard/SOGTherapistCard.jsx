@@ -1,5 +1,8 @@
-import './styles.css';
+import PropTypes from "prop-types";
+
 import SOGToolTip from 'components/SOGToolTip/SOGToolTip.jsx';
+
+import './styles.css';
 
 const SOGTherapistCard = ({
   img,
@@ -8,7 +11,6 @@ const SOGTherapistCard = ({
   proNouns,
   focus,
   className,
-  ...props
 }) => {
     const p = (proNouns) => {
       switch (proNouns) {
@@ -65,6 +67,13 @@ const ToolTipText = (focus) => {
   }
 }
 
-
+SOGTherapistCard.propTypes = {
+  img: PropTypes.string,
+  therapist: PropTypes.string,
+  title: PropTypes.arrayOf(PropTypes.string),
+  proNouns: PropTypes.string,
+  focus: PropTypes.arrayOf(PropTypes.string),
+  className: PropTypes.string,
+}
 
 export default SOGTherapistCard;
