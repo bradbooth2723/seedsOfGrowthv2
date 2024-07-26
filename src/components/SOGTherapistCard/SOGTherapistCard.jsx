@@ -4,6 +4,8 @@ import SOGToolTip from 'components/SOGToolTip/SOGToolTip.jsx';
 
 import './styles.css';
 
+// TODO: Create alt text for images for accessibility
+
 const SOGTherapistCard = ({
   img,
   therapist,
