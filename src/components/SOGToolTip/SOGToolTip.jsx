@@ -1,6 +1,8 @@
+import PropTypes from "prop-types";
+
 import './styles.css';
 
-const SOGToolTip = ({ toolTipText, position, children, ...props }) => {
+const SOGToolTip = ({ toolTipText, position, children }) => {
     return (
         <div className="tool-tip">
             {children}
@@ -10,6 +12,12 @@ const SOGToolTip = ({ toolTipText, position, children, ...props }) => {
             
         </div>
     )
+}
+
+SOGToolTip.propTypes = {
+    toolTipText: PropTypes.string,
+    position: PropTypes.string,
+    children: PropTypes.node,
 }
 
 export default SOGToolTip;
