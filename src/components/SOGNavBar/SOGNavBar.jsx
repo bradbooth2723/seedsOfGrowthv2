@@ -1,4 +1,4 @@
-import Navbar from 'components/navbar/Navbar';
+import Navbar from 'components/Navbar/Navbar';
 import SOGLogo from 'assets/SOGLogo.png';
 import CustomLink from "components/CustomLink/CustomLink.jsx";
 import Dropdown from 'components/Dropdown/Dropdown.jsx';

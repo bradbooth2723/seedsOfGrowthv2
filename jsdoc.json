@@ -1,0 +1,15 @@
+{
+  "source": {
+    "include": ["./src"],
+    "includePattern": ".+\\.(js(doc|x)?|mjs)$"
+  },
+  "plugins": ["plugins/markdown"],
+  "opts": {
+    "recurse": true,
+    "destination": "docs"
+  },
+  "templates": {
+    "cleverLinks": true,
+    "monoSpaceLinks": true
+  }
+}
