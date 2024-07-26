@@ -1,7 +1,9 @@
-import './styles.css';
+import * as React from 'react';
+
 import SOGTherapistCard from 'components/SOGTherapistCard/SOGTherapistCard';
 import therapists from 'data/therapistDetails.json';
-import * as React from 'react';
+
+import './styles.css';
 
 // TODO: Clean up component a little...maybe make a little more modular.
 // TODO: Make arrow buttons look nicer
@@ -11,14 +13,14 @@ import * as React from 'react';
 const SOGTherapistCardSlideContainer = () => {
     const [groupNumber, setGroupNumber] = React.useState(0);
 
-    var showNext = false;
-    var showPrev = false;
-    var showDots = false;
+    let showNext = false;
+    let showPrev = false;
+    let showDots = false;
     
     const groupSize = 3;
-    var dots = document.getElementsByClassName('dot');
+    let dots = document.getElementsByClassName('dot');
 
-    for(var i = 0; dots && i < dots.length; i++) {
+    for(let i = 0; dots && i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(' active', '');
     }
 
@@ -39,11 +41,11 @@ const SOGTherapistCardSlideContainer = () => {
         showNext = true;
     }
 
-    const handleNext = (event) => {
+    const handleNext = () => {
         setGroupNumber(groupNumber + 1);
     }
 
-    const handlePrev = (event) => {
+    const handlePrev = () => {
         setGroupNumber(groupNumber - 1);
     }
 
@@ -61,7 +63,7 @@ const SOGTherapistCardSlideContainer = () => {
 
                         // TODO: Should be based on screen size
                         const numOfCards = 3;
-                        const className = (index + 1) % 3 === 0 ? 'cards last' : 'cards';
+                        const className = (index + 1) % numOfCards === 0 ? 'cards last' : 'cards';
                         return (
                             <SOGTherapistCard key={index} img={headShot} therapist={name} title={titles} proNouns={proNoun} focus={focus} className={className} />
                         )
@@ -71,7 +73,7 @@ const SOGTherapistCardSlideContainer = () => {
             </div>
             {showDots ? (
                 <div className='bubbles'>
-                    {therapistGroups.map((_, index) => (<span key={index} class='dot' onClick={() => handleDot(index)}></span>))}
+                    {therapistGroups.map((_, index) => (<span key={index} className='dot' onClick={() => handleDot(index)}></span>))}
                 </div>
             ) : null}
             
