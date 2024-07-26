@@ -27,7 +27,7 @@ const SOGTherapistCard = ({
     const focusArray = BuildFocus(focus);
     return (
     <div className={className + ' flex-container'}>
-      <img src={`../img/${img}`} className='head-shot' height='65.5rem' width='65.5rem' />
+      <img src={`../img/${img}`} className='head-shot' height='65.5rem' width='65.5rem' alt='' />
       <h1 className='summary-title'>{`${therapist} | ${title.join(', ')}`}</h1>
       <p className='text'>{p(proNouns)}</p>
       <div>
