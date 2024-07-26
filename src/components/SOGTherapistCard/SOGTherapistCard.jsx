@@ -39,9 +39,9 @@ const BuildFocus = (focus) => {
   const focusArray = [];
 
   focus.forEach((element, index, array) => {
-    focusArray.push(<SOGToolTip key={index} toolTipText={ToolTipText(element)} children={element} position='top' />);
+    focusArray.push(<SOGToolTip key={index} toolTipText={ToolTipText(element)} position='top'>{element}</SOGToolTip> );
 
-    if (index != array.length - 1) {
+    if (index !== array.length - 1) {
       focusArray.push(' | ');
     } 
   });

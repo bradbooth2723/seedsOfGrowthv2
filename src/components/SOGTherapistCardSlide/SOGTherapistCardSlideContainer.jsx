@@ -61,7 +61,7 @@ const SOGTherapistCardSlideContainer = () => {
 
                         // TODO: Should be based on screen size
                         const numOfCards = 3;
-                        const className = (index + 1) % 3 == 0 ? 'cards last' : 'cards';
+                        const className = (index + 1) % 3 === 0 ? 'cards last' : 'cards';
                         return (
                             <SOGTherapistCard key={index} img={headShot} therapist={name} title={titles} proNouns={proNoun} focus={focus} className={className} />
                         )

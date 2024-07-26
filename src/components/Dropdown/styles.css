@@ -3,6 +3,8 @@
     color: black;
     padding: 1rem;
     border: none;
+    display: flex;
+    align-items: center;
 }
 
 .dropdown {

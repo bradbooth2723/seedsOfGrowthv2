@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 import './styles.css';
 
 // TODO: Make this more generic to handle variable input to tab list
@@ -8,11 +9,11 @@ import './styles.css';
  * @description Header navigation bar component
  *
  * @component
- * @param {React.ReactElement} title - A React component for the home button on left side of Navbar
- * @param {Array.<React.ReactElement>} tabs - Right Justified menu options
+ * @param {JSX.Element} title - A React component for the home button on left side of Navbar
+ * @param {Array.<JSX.Element>} tabs - Right Justified menu options
  * @param {Object} props
  *
- * @returns {React.ReactElement}
+ * @returns {JSX.Element}
  */
 const Navbar = ({ title, tabs, ...props}) => {
     return (
